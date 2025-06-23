@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - ElectroMaster</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+   <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +233 592822746</span>
+                    <span><i class="fas fa-envelope"></i> albertboakye558@gmail.com</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <h1>Albie<span>B</span></h1>
+                    <p>Electrical Solutions & Training</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> / <span>Shopping Cart</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-container">
+                <div class="cart-items">
+                    <div class="cart-header">
+                        <div class="header-product">Product</div>
+                        <div class="header-price">Price</div>
+                        <div class="header-quantity">Quantity</div>
+                        <div class="header-subtotal">Subtotal</div>
+                        <div class="header-remove"></div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="item-product">
+                            <img src="images/product1-thumb1.jpg" alt="Product">
+                            <div class="product-info">
+                                <h4>Professional Voltage Tester</h4>
+                                <div class="product-meta">
+                                    <span>SKU: EMT-12345</span>
+                                    <span>Color: Red</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">Gh49.99</div>
+                        <div class="item-quantity">
+                            <div class="quantity-selector">
+                                <button class="quantity-minus"><i class="fas fa-minus"></i></button>
+                                <input type="number" value="1" min="1" max="10">
+                                <button class="quantity-plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="item-subtotal">Gh49.99</div>
+                        <div class="item-remove">
+                            <button class="remove-item"><i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="item-product">
+                            <img src="images/product2-thumb1.jpg" alt="Product">
+                            <div class="product-info">
+                                <h4>Heavy Duty Wire Stripper</h4>
+                                <div class="product-meta">
+                                    <span>SKU: EMT-67890</span>
+                                    <span>Size: 8"</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">Gh24.99</div>
+                        <div class="item-quantity">
+                            <div class="quantity-selector">
+                                <button class="quantity-minus"><i class="fas fa-minus"></i></button>
+                                <input type="number" value="2" min="1" max="10">
+                                <button class="quantity-plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="item-subtotal">Gh49.98</div>
+                        <div class="item-remove">
+                            <button class="remove-item"><i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                    <div class="cart-actions">
+                        <button class="btn btn-outline"><i class="fas fa-arrow-left"></i> Continue Shopping</button>
+                        <button class="btn btn-outline" id="update-cart">Update Cart</button>
+                    </div>
+                </div>
+                <div class="cart-summary">
+                    <h3>Cart Summary</h3>
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span>Gh99.97</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span>Gh7.50</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span>Gh107.47</span>
+                        </div>
+                    </div>
+                    <div class="coupon-code">
+                        <input type="text" placeholder="Enter coupon code">
+                        <button class="btn btn-outline">Apply</button>
+                    </div>
+                    <button class="btn btn-primary" id="proceed-checkout">Proceed to Checkout</button>
+                    <div class="secure-checkout">
+                        <i class="fas fa-lock"></i>
+                        <span>Secure Checkout</span>
+                    </div>
+                    <div class="payment-methods">
+                        <img src="images/visa.png" alt="Visa">
+                        <img src="images/mastercard.png" alt="Mastercard">
+                        <img src="images/amex.png" alt="American Express">
+                        <img src="images/paypal.png" alt="PayPal">
+                    </div>
+                </div>
+            </div>
+            <div class="cart-recommendations">
+                <h3>You May Also Like</h3>
+                <div class="products-grid">
+                    <!-- Recommended products will be loaded via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ElectroMaster</h3>
+                    <p>Providing quality electrical products and professional training since 2005.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="training.html">Training</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="products.html?category=wiring">Wiring & Cables</a></li>
+                        <li><a href="products.html?category=tools">Tools & Equipment</a></li>
+                        <li><a href="products.html?category=lighting">Lighting Solutions</a></li>
+                        <li><a href="products.html?category=safety">Safety Gear</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Electric Ave, Power City, PC 12345</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@electromaster.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Albie B. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

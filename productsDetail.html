@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - ElectroMaster</title>
+    <link rel="stylesheet" href="productsDetail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+   <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +233 592822746</span>
+                    <span><i class="fas fa-envelope"></i> albertboakye558@gmail.com</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <h1>Albie<span>B</span></h1>
+                    <p>Electrical Solutions & Training</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumbs">
+                 <a href="products.html">Products</a> /<span>Product Detail</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-container">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="images/product1-large.jpg" alt="Product Image" id="main-product-image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="images/product1-thumb1.jpg" alt="Thumbnail 1" class="active">
+                        <img src="images/product1-thumb2.jpg" alt="Thumbnail 2">
+                        <img src="images/product1-thumb3.jpg" alt="Thumbnail 3">
+                        <img src="images/product1-thumb4.jpg" alt="Thumbnail 4">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1 id="product-title">Professional Voltage Tester</h1>
+                    <div class="product-meta">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(24 reviews)</span>
+                        </div>
+                        <div class="sku">SKU: EMT-12345</div>
+                        <div class="availability">In Stock (15 available)</div>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">$49.99</span>
+                        <span class="original-price">$59.99</span>
+                        <span class="discount">Save $10.00</span>
+                    </div>
+                    <div class="product-description">
+                        <p>The Professional Voltage Tester is an essential tool for any electrician or DIY enthusiast. With its advanced detection technology and durable construction, it provides accurate voltage readings for both AC and DC circuits.</p>
+                        <ul>
+                            <li>Detects voltage from 12V to 1000V</li>
+                            <li>Non-contact voltage detection</li>
+                            <li>LED and audible indicators</li>
+                            <li>IP65 waterproof rating</li>
+                            <li>Includes protective holster</li>
+                        </ul>
+                    </div>
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-minus"><i class="fas fa-minus"></i></button>
+                            <input type="number" value="1" min="1" max="10" id="product-quantity">
+                            <button class="quantity-plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-primary" id="add-to-cart">Add to Cart</button>
+                        <button class="btn btn-outline"><i class="far fa-heart"></i> Wishlist</button>
+                    </div>
+                    <div class="product-meta-details">
+                        <div class="meta-item">
+                            <span>Category:</span>
+                            <a href="products.html?category=tools">Tools & Equipment</a>
+                        </div>
+                        <div class="meta-item">
+                            <span>Brand:</span>
+                            <a href="#">ElectroPro</a>
+                        </div>
+                        <div class="meta-item">
+                            <span>Share:</span>
+                            <div class="social-share">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-tabs">
+                <ul class="tabs-nav">
+                    <li class="active" data-tab="description">Description</li>
+                    <li data-tab="specifications">Specifications</li>
+                    <li data-tab="reviews">Reviews (24)</li>
+                </ul>
+                <div class="tabs-content">
+                    <div class="tab-pane active" id="description">
+                        <h3>Product Description</h3>
+                        <p>The Professional Voltage Tester is designed for electricians, technicians, and DIY enthusiasts who need reliable voltage detection. Its rugged construction and advanced features make it suitable for both residential and commercial applications.</p>
+                        <p>Features include non-contact voltage detection for added safety, dual-range detection (12V-1000V), bright LED indicators for clear visibility in all lighting conditions, and an audible alarm for noisy environments. The IP65 rating ensures protection against dust and water jets, making it suitable for use in various conditions.</p>
+                        <img src="images/product-detail1.jpg" alt="Product in use">
+                    </div>
+                    <div class="tab-pane" id="specifications">
+                        <h3>Technical Specifications</h3>
+                        <table>
+                            <tr>
+                                <th>Model</th>
+                                <td>EMT-12345</td>
+                            </tr>
+                            <tr>
+                                <th>Voltage Range</th>
+                                <td>12V - 1000V AC/DC</td>
+                            </tr>
+                            <tr>
+                                <th>Detection Method</th>
+                                <td>Non-contact (AC), Contact (DC)</td>
+                            </tr>
+                            <tr>
+                                <th>Indicators</th>
+                                <td>LED (Red/Green), Audible Alarm</td>
+                            </tr>
+                            <tr>
+                                <th>Waterproof Rating</th>
+                                <td>IP65</td>
+                            </tr>
+                            <tr>
+                                <th>Battery</th>
+                                <td>2 x AAA (included)</td>
+                            </tr>
+                            <tr>
+                                <th>Dimensions</th>
+                                <td>6.3 x 1.8 x 1.2 inches</td>
+                            </tr>
+                            <tr>
+                                <th>Weight</th>
+                                <td>4.2 oz</td>
+                            </tr>
+                            <tr>
+                                <th>Warranty</th>
+                                <td>3 years</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane" id="reviews">
+                        <h3>Customer Reviews</h3>
+                        <div class="review-summary">
+                            <div class="average-rating">
+                                <div class="average">4.7</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="total">24 reviews</div>
+                            </div>
+                            <div class="rating-bars">
+                                <div class="rating-bar">
+                                    <span>5 star</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 75%;"></div>
+                                    </div>
+                                    <span>18</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>4 star</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 16.5%;"></div>
+                                    </div>
+                                    <span>4</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>3 star</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 4%;"></div>
+                                    </div>
+                                    <span>1</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>2 star</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 4%;"></div>
+                                    </div>
+                                    <span>1</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>1 star</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 0%;"></div>
+                                    </div>
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-list">
+                            <div class="review">
+                                <div class="review-header">
+                                    <div class="review-author">
+                                        <img src="images/reviewer1.jpg" alt="John S.">
+                                        <div>
+                                            <h4>John S.</h4>
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-date">March 15, 2023</div>
+                                </div>
+                                <div class="review-content">
+                                    <h5>Excellent voltage tester</h5>
+                                    <p>This voltage tester has become an essential part of my toolkit. The non-contact feature works perfectly and has saved me time on numerous jobs. The build quality is excellent and it feels durable in hand. Highly recommended for professionals.</p>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div class="review-header">
+                                    <div class="review-author">
+                                        <img src="images/reviewer2.jpg" alt="Sarah K.">
+                                        <div>
+                                            <h4>Sarah K.</h4>
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-date">February 28, 2023</div>
+                                </div>
+                                <div class="review-content">
+                                    <h5>Great for DIY projects</h5>
+                                    <p>As a homeowner who likes to do electrical work myself, this tester gives me confidence that I'm working safely. The LED lights are bright and easy to see, and the audible alarm is loud enough to hear over other noises. The price was reasonable for the quality.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-form">
+                            <h4>Write a Review</h4>
+                            <form id="review-form">
+                                <div class="form-group">
+                                    <label for="review-rating">Your Rating</label>
+                                    <div class="rating-input">
+                                        <input type="radio" name="rating" id="star5" value="5"><label for="star5"><i class="fas fa-star"></i></label>
+                                        <input type="radio" name="rating" id="star4" value="4"><label for="star4"><i class="fas fa-star"></i></label>
+                                        <input type="radio" name="rating" id="star3" value="3"><label for="star3"><i class="fas fa-star"></i></label>
+                                        <input type="radio" name="rating" id="star2" value="2"><label for="star2"><i class="fas fa-star"></i></label>
+                                        <input type="radio" name="rating" id="star1" value="1"><label for="star1"><i class="fas fa-star"></i></label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="review-title">Review Title</label>
+                                    <input type="text" id="review-title" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="review-text">Your Review</label>
+                                    <textarea id="review-text" rows="5" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="review-name">Your Name</label>
+                                    <input type="text" id="review-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="review-email">Email Address</label>
+                                    <input type="email" id="review-email" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit Review</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="related-products">
+                <h3>Related Products</h3>
+                <div class="products-grid">
+                    <!-- Related products will be loaded via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ElectroMaster</h3>
+                    <p>Providing quality electrical products and professional training since 2005.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="training.html">Training</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="products.html?category=wiring">Wiring & Cables</a></li>
+                        <li><a href="products.html?category=tools">Tools & Equipment</a></li>
+                        <li><a href="products.html?category=lighting">Lighting Solutions</a></li>
+                        <li><a href="products.html?category=safety">Safety Gear</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Electric Ave, Power City, PC 12345</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@electromaster.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ElectroMaster. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="productsdetail.js"></script>
+</body>
+</html>

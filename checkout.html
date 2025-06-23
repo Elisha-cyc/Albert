@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - ElectroMaster</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+ <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +233 592822746</span>
+                    <span><i class="fas fa-envelope"></i> albertboakye558@gmail.com</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <h1>Albie<span>B</span></h1>
+                    <p>Electrical Solutions & Training</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Checkout</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> / <a href="cart.html">Cart</a> / <span>Checkout</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-container">
+                <div class="checkout-steps">
+                    <div class="step active" data-step="1">
+                        <div class="step-number">1</div>
+                        <div class="step-info">
+                            <div class="step-title">Shipping</div>
+                            <div class="step-description">Address details</div>
+                        </div>
+                    </div>
+                    <div class="step" data-step="2">
+                        <div class="step-number">2</div>
+                        <div class="step-info">
+                            <div class="step-title">Payment</div>
+                            <div class="step-description">Payment method</div>
+                        </div>
+                    </div>
+                    <div class="step" data-step="3">
+                        <div class="step-number">3</div>
+                        <div class="step-info">
+                            <div class="step-title">Review</div>
+                            <div class="step-description">Confirm order</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-content">
+                    <div class="checkout-form">
+                        <h2>Shipping Information</h2>
+                        <form id="shipping-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">First Name *</label>
+                                    <input type="text" id="first-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Last Name *</label>
+                                    <input type="text" id="last-name" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company Name (Optional)</label>
+                                <input type="text" id="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country *</label>
+                                <select id="country" required>
+                                    <option value="">Select Country</option>
+                                    <option value="US">United States</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <!-- More countries -->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Street Address *</label>
+                                <input type="text" id="address" placeholder="House number and street name" required>
+                                <input type="text" id="address2" placeholder="Apartment, suite, unit, etc. (optional)">
+                            </div>
+                            <div class="form-group">
+                                <label for="city">Town / City *</label>
+                                <input type="text" id="city" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="state">State / County *</label>
+                                    <select id="state" required>
+                                        <option value="">Select State</option>
+                                        <!-- States will be loaded via JavaScript based on country -->
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="postcode">Postcode / ZIP *</label>
+                                    <input type="text" id="postcode" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone *</label>
+                                    <input type="tel" id="phone" required>
+                                </div>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="create-account">
+                                <label for="create-account">Create an account?</label>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="different-billing">
+                                <label for="different-billing">Ship to a different address?</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="order-notes">Order Notes (Optional)</label>
+                                <textarea id="order-notes" rows="4" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                            </div>
+                        </form>
+                        <div class="checkout-actions">
+                            <a href="cart.html" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Back to Cart</a>
+                            <button class="btn btn-primary" id="continue-to-payment">Continue to Payment</button>
+                        </div>
+                    </div>
+                    <div class="order-summary">
+                        <h3>Your Order</h3>
+                        <div class="summary-items">
+                            <div class="summary-header">
+                                <span>Product</span>
+                                <span>Total</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Professional Voltage Tester × 1</span>
+                                <span>$49.99</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Heavy Duty Wire Stripper × 2</span>
+                                <span>$49.98</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Subtotal</span>
+                                <span>$99.97</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Shipping</span>
+                                <span>Free Shipping</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Tax</span>
+                                <span>$7.50</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total</span>
+                                <span>$107.47</span>
+                            </div>
+                        </div>
+                        <div class="payment-methods-preview">
+                            <div class="payment-method">
+                                <input type="radio" name="payment-method" id="credit-card" checked>
+                                <label for="credit-card">Credit Card</label>
+                                <div class="payment-icon">
+                                    <img src="images/visa.png" alt="Visa">
+                                    <img src="images/mastercard.png" alt="Mastercard">
+                                    <img src="images/amex.png" alt="American Express">
+                                </div>
+                            </div>
+                            <div class="payment-method">
+                                <input type="radio" name="payment-method" id="paypal">
+                                <label for="paypal">PayPal</label>
+                                <div class="payment-icon">
+                                    <img src="images/paypal.png" alt="PayPal">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="secure-checkout">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure Checkout</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ElectroMaster</h3>
+                    <p>Providing quality electrical products and professional training since 2005.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="training.html">Training</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="products.html?category=wiring">Wiring & Cables</a></li>
+                        <li><a href="products.html?category=tools">Tools & Equipment</a></li>
+                        <li><a href="products.html?category=lighting">Lighting Solutions</a></li>
+                        <li><a href="products.html?category=safety">Safety Gear</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Electric Ave, Power City, PC 12345</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@electromaster.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ElectroMaster. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ElectroMaster</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+   <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +233 592822746</span>
+                    <span><i class="fas fa-envelope"></i> albertboakye558@gmail.com</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <h1>Albie<span>B</span></h1>
+                    <p>Electrical Solutions & Training</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>High-quality electrical components and tools for professionals and DIY enthusiasts</p>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="products-filter">
+                <div class="filter-categories">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="products.html" class="active">All Products</a></li>
+                        <li><a href="products.html?category=wiring">Wiring & Cables</a></li>
+                        <li><a href="products.html?category=tools">Tools & Equipment</a></li>
+                        <li><a href="products.html?category=lighting">Lighting Solutions</a></li>
+                        <li><a href="products.html?category=safety">Safety Gear</a></li>
+                        <li><a href="products.html?category=switches">Switches & Outlets</a></li>
+                    </ul>
+                </div>
+                <div class="filter-options">
+                    <div class="filter-sort">
+                        <label for="sort">Sort By:</label>
+                        <select id="sort">
+                            <option value="default">Default</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="name">Name: A to Z</option>
+                            <option value="name-desc">Name: Z to A</option>
+                            <option value="rating">Highest Rated</option>
+                        </select>
+                    </div>
+                    <div class="filter-search">
+                        <input type="text" placeholder="Search products..." id="product-search">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded via JavaScript -->
+            </div>
+            <div class="pagination">
+                <a href="#" class="disabled"><i class="fas fa-chevron-left"></i> Previous</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">Next <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="brands-section">
+        <div class="container">
+            <h2 class="section-title">Trusted Brands</h2>
+            <div class="brands-slider">
+                <div class="brand-item">
+                    <img src="images/brand1.png" alt="Brand 1">
+                </div>
+                <div class="brand-item">
+                    <img src="images/brand2.png" alt="Brand 2">
+                </div>
+                <div class="brand-item">
+                    <img src="images/brand3.png" alt="Brand 3">
+                </div>
+                <div class="brand-item">
+                    <img src="images/brand4.png" alt="Brand 4">
+                </div>
+                <div class="brand-item">
+                    <img src="images/brand5.png" alt="Brand 5">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ElectroMaster</h3>
+                    <p>Providing quality electrical products and professional training since 2005.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="training.html">Training</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="products.html?category=wiring">Wiring & Cables</a></li>
+                        <li><a href="products.html?category=tools">Tools & Equipment</a></li>
+                        <li><a href="products.html?category=lighting">Lighting Solutions</a></li>
+                        <li><a href="products.html?category=safety">Safety Gear</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Electric Ave, Power City, PC 12345</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@electromaster.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 202 Albie b Electrical. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>

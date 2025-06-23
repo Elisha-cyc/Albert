@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Courses - ElectroMaster</title>
+    <link rel="stylesheet" href="training.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+     <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +233 592822746</span>
+                    <span><i class="fas fa-envelope"></i> albertboakye558@gmail.com</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <h1>Albie<span>B</span></h1>
+                    <p>Electrical Solutions & Training</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Training Courses</h1>
+            <p>Professional electrical training for all skill levels</p>
+        </div>
+    </section>
+
+    <section class="training-courses">
+        <div class="container">
+            <div class="training-filter">
+                <div class="filter-categories">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="training.html" class="active">All Courses</a></li>
+                        <li><a href="training.html?category=beginner">Beginner</a></li>
+                        <li><a href="training.html?category=intermediate">Intermediate</a></li>
+                        <li><a href="training.html?category=advanced">Advanced</a></li>
+                        <li><a href="training.html?category=certification">Certification</a></li>
+                        <li><a href="training.html?category=safety">Safety Training</a></li>
+                    </ul>
+                </div>
+                <div class="filter-options">
+                    <div class="filter-sort">
+                        <label for="sort">Sort By:</label>
+                        <select id="sort">
+                            <option value="default">Default</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="duration">Duration</option>
+                            <option value="date">Start Date</option>
+                        </select>
+                    </div>
+                    <div class="filter-search">
+                        <input type="text" placeholder="Search courses..." id="course-search">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="cir.jpeg" alt="Basic Electrical Wiring">
+                        <div class="course-level beginner">Beginner</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>Basic Electrical Wiring</h3>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 8 months</span>
+                            <span><i class="fas fa-user-graduate"></i> Max 12 students</span>
+                            <span><i class="fas fa-star"></i> 4.8 (56)</span>
+                        </div>
+                        <p>Learn the fundamentals of residential electrical wiring, including safety practices, basic circuits, and common wiring techniques.</p>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="current-price">Ghc600</span>
+                                <span class="original-price">Ghc400</span>
+                            </div>
+                            <!-- <a href="coursedetail.html" class="btn btn-outline">View Course</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="technology.jpeg" alt="Advanced Circuit Analysis">
+                        <div class="course-level advanced">Advanced</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>Advanced Circuit Analysis</h3>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 16 months</span>
+                            <span><i class="fas fa-user-graduate"></i> Max 10 students</span>
+                            <span><i class="fas fa-star"></i> 4.9 (32)</span>
+                        </div>
+                        <p>Master complex circuit analysis techniques for troubleshooting and designing electrical systems in commercial settings.</p>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="current-price">Ghc900</span>
+                            </div>
+                            <!-- <a href="coursedetail.html" class="btn btn-outline">View Course</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="certificate.jpeg" alt="Electrical Safety Certification">
+                        <div class="course-level certification">Certification</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>Electrical Safety Certification</h3>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 12 months</span>
+                            <span><i class="fas fa-user-graduate"></i> Max 15 students</span>
+                            <span><i class="fas fa-star"></i> 4.7 (78)</span>
+                        </div>
+                        <p>OSHA-compliant safety training covering electrical hazards, PPE, lockout/tagout procedures, and emergency response.</p>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="current-price">Ghc1000</span>
+                                <span class="original-price">Ghc1500</span>
+                            </div>
+                            <!-- <a href="coursedetail.html" class="btn btn-outline">View Course</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="solar.jpeg" alt="Solar Panel Installation">
+                        <div class="course-level intermediate">Intermediate</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>Solar Panel Installation</h3>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> ! years 6months</span>
+                            <span><i class="fas fa-user-graduate"></i> Max 8 students</span>
+                            <span><i class="fas fa-star"></i> 4.9 (24)</span>
+                        </div>
+                        <p>Comprehensive training on residential and small commercial solar PV system design, installation, and maintenance.</p>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="current-price">Ghc300</span>
+                            </div>
+                            <!-- <a href="coursedetail.html" class="btn btn-outline">View Course</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="homesmart.jpeg" alt="Smart Home Technology">
+                        <div class="course-level intermediate">Intermediate</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>Smart Home Technology</h3>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 10 months</span>
+                            <span><i class="fas fa-user-graduate"></i> Max 12 students</span>
+                            <span><i class="fas fa-star"></i> 4.6 (41)</span>
+                        </div>
+                        <p>Learn to install and configure modern smart home systems including lighting, security, and automation controls.</p>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="current-price">Ghc3500</span>
+                            </div>
+                            <!-- <a href="coursedetail.html" class="btn btn-outline">View Course</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="motor.jpeg" alt="Industrial Motor Controls">
+                        <div class="course-level advanced">Advanced</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>Industrial Motor Controls</h3>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 1 year 10months</span>
+                            <span><i class="fas fa-user-graduate"></i> Max 6 students</span>
+                            <span><i class="fas fa-star"></i> 4.8 (19)</span>
+                        </div>
+                        <p>Hands-on training with industrial motor control circuits, PLCs, and troubleshooting techniques for maintenance electricians.</p>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="current-price">Ghc4000</span>
+                            </div>
+                            <!-- <a href="coursedetail.html" class="btn btn-outline">View Course</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#" class="disabled"><i class="fas fa-chevron-left"></i> Previous</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">Next <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="training-benefits">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Training?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Industry-Recognized Certifications</h3>
+                    <p>Our courses provide certifications that are respected by employers nationwide.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from experienced electricians with years of field and teaching experience.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Hands-On Training</h3>
+                    <p>Practical, real-world exercises using professional-grade tools and equipment.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Career Support</h3>
+                    <p>Job placement assistance and resume building for graduates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="upcoming-events">
+        <div class="container">
+            <h2 class="section-title">Upcoming Training Sessions</h2>
+            <div class="events-list">
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="date-day">15</div>
+                        <div class="date-month">Jun</div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Basic Electrical Wiring</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 9:00 AM - 5:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Main Training Center</span>
+                        </div>
+                        <p>8-hour intensive workshop covering residential wiring fundamentals.</p>
+                        <a href="contact.html" class="btn btn-outline">Register Now</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="date-day">22</div>
+                        <div class="date-month">Jun</div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Electrical Safety Certification</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 9:00 AM - 4:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Westside Facility</span>
+                        </div>
+                        <p>Two-day OSHA-compliant safety training course.</p>
+                        <a href="contact.html" class="btn btn-outline">Register Now</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="date-day">05</div>
+                        <div class="date-month">Jul</div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Solar Panel Installation</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 8:30 AM - 4:30 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Main Training Center</span>
+                        </div>
+                        <p>Weekend intensive course on residential solar installations.</p>
+                        <a href="contact.html" class="btn btn-outline">Register Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="coursedetail.html" class="btn btn-primary">View All Events</a>
+            </div>
+        </div>
+    </section>
+<footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ElectroMaster</h3>
+                    <p>Providing quality electrical products and professional training since 2005.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="training.html">Training</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="products.html?category=wiring">Wiring & Cables</a></li>
+                        <li><a href="products.html?category=tools">Tools & Equipment</a></li>
+                        <li><a href="products.html?category=lighting">Lighting Solutions</a></li>
+                        <li><a href="products.html?category=safety">Safety Gear</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Electric Ave, Power City, PC 12345</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@electromaster.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Albie B. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="training.js"></script>
+</body>
+</html>
